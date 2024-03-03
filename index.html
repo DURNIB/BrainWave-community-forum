@@ -1,45 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BrainWave</title>
     <!-------- DaisyUI & Tailwind CSS  -------->
-<link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
-<script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
     <!-------- Custom CSS Link -------->
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body class="mulish-font">
     <!-------- Navbar -------->
-<header>
-    
-</header>
-
+    <header>
+      <nav class="container mx-auto">
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 space-y-4 shadow bg-gradient-to-r from-indigo-100 to-indigo-300 rounded-box w-32 font-bold"
+              >
+                <li>
+                  <a> <img src="img/home-icon.svg" alt="home icon" />Home</a>
+                </li>
+                <li>
+                  <a> <img src="img/pen-icon.svg" alt="pen icon" />Write</a>
+                </li>
+                <li>
+                  <a>
+                    <img
+                      src="img/add-people-icon.svg"
+                      alt="add people icon"
+                    />Add</a
+                  >
+                </li>
+                <li>
+                  <a> <img src="img/flag-icon.svg" alt="flag icon" />Flagged</a>
+                </li>
+              </ul>
+            </div>
+            <a class="btn btn-ghost font-black text-3xl gap-x-0"
+              ><span class="text-indigo-400">B</span>rain<span
+                class="text-indigo-400"
+                >W</span
+              >ave</a
+            >
+          </div>
+          <div class="navbar-end">
+            <div class="hidden lg:flex">
+              <ul class="menu menu-horizontal pr-6 gap-x-2">
+                <li class="rounded-full bg-indigo-50 border border-gray-300">
+                  <a class="hover:bg-indigo-400 rounded-full p-3">
+                    <img src="img/home-icon.svg" alt="home icon"
+                  /></a>
+                </li>
+                <li class="rounded-full bg-indigo-50 border border-gray-300">
+                  <a class="hover:bg-indigo-400 rounded-full p-3">
+                    <img src="img/pen-icon.svg" alt="pen icon"
+                  /></a>
+                </li>
+                <li class="rounded-full bg-indigo-50 border border-gray-300">
+                  <a class="hover:bg-indigo-400 rounded-full p-3">
+                    <img src="img/add-people-icon.svg" alt="add people icon"
+                  /></a>
+                </li>
+                <li class="rounded-full bg-indigo-50 border border-gray-300">
+                  <a class="hover:bg-indigo-400 rounded-full p-3">
+                    <img src="img/flag-icon.svg" alt="flag icon"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <a
+                class="btn rounded-full bg-indigo-400 text-white font-bold px-8"
+                >Sign In</a
+              >
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
     <!-------- Main -------->
     <main>
-        <!----- hero section ----->
-        <section>
-
-        </section>
-        <!----- let's discuss section ----->
-        <section>
-
-        </section>
-        <!----- join forum section ----->
-        <section>
-
-        </section>
-        <!----- latest post section ----->
-        <section>
-
-        </section>
+      <!----- hero section ----->
+      <section></section>
+      <!----- let's discuss section ----->
+      <section></section>
+      <!----- join forum section ----->
+      <section></section>
+      <!----- latest post section ----->
+      <section></section>
     </main>
-        <!-------- Footer -------->
-        <footer>
-
-        </footer>
-      <!-------- JavaScript -------->
-      <script src="js/script.js"></script>
-</body>
+    <!-------- Footer -------->
+    <footer></footer>
+    <!-------- JavaScript -------->
+    <script src="js/script.js"></script>
+  </body>
 </html>
