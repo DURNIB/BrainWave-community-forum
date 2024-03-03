@@ -105,66 +105,165 @@
     <!-------- Main -------->
     <main>
       <!----- hero section ----->
-      <section class="hero h-full bg-[#12132D] container mx-auto rounded-3xl bg-[url('img/bgbanner.png')] bg-no-repeat bg-bottom bg-contain py-32">
-          <!-- hero container -->
+      <section
+        class="hero h-full bg-[#12132D] container mx-auto rounded-3xl bg-[url('img/bgbanner.png')] bg-no-repeat bg-bottom bg-contain py-32"
+      >
+        <!-- hero container -->
         <div
-            class="hero-content flex-col-reverse md:flex-col lg:flex-row-reverse gap-x-48"
+          class="hero-content flex-col-reverse md:flex-col lg:flex-row-reverse gap-x-48"
+        >
+          <!-- hero right side card -->
+          <div class="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+            <div class="card-body">
+              <ul class="p-6 space-y-4 font-medium">
+                <div class="flex justify-between">
+                  <li>Registered Users</li>
+                  <li>216</li>
+                </div>
+                <div class="flex justify-between">
+                  <li>Forum</li>
+                  <li>4794</li>
+                </div>
+                <div class="flex justify-between">
+                  <li>Topics</li>
+                  <li>847</li>
+                </div>
+                <div class="flex justify-between">
+                  <li>Replies</li>
+                  <li>2457</li>
+                </div>
+              </ul>
+            </div>
+          </div>
+          <!-- hero title & subtitle -->
+          <div class="text-center lg:text-left text-white">
+            <h1 class="text-5xl font-bold">
+              Welcome to the <br />
+              <span
+                class="bg-gradient-to-r from-indigo-500 to-indigo-200 text-transparent bg-clip-text"
+                >BrainWave</span
+              >
+              Forum!
+            </h1>
+            <p class="py-6">
+              Share your favorite opinion and win exclusive forum coffee mug
+              with BrainWave theme!
+            </p>
+            <!-- hero search input box -->
+            <div class="input rounded-full flex items-center py-7">
+              <input
+                type="text"
+                class="grow text-black"
+                placeholder="Search here anything"
+              />
+              <button
+                class="btn bg-indigo-400 text-white font-bold px-8 rounded-full"
+              >
+                Search
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!----- let's discuss section ----->
+      <section class="container mx-auto my-24">
+        <!-- discuss title & subtitle -->
+        <div class="text-center">
+          <h1 class="font-black text-3xl mb-6">Let’s Discuss</h1>
+          <p>
+            Yes, you can run unit tests and view the results directly within the
+            app. The <br />
+            integrated testing features allow for a streamlined .
+          </p>
+        </div>
+        <!-- discuss card container main  -->
+        <div class="flex mt-12 gap-x-2 flex-col md:flex-row justify-evenly">
+          <!-- left side card container -->
+          <div
+            class="bg-indigo-50 p-8 rounded-3xl flex flex-col md:flex-row gap-x-4"
           >
-            <!-- hero right side card -->
-            <div class="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
-              <div class="card-body">
-                <ul class="p-6 space-y-4 font-medium">
-                  <div class="flex justify-between">
-                    <li>Registered Users</li>
-                    <li>216</li>
-                  </div>
-                  <div class="flex justify-between">
-                    <li>Forum</li>
-                    <li>4794</li>
-                  </div>
-                  <div class="flex justify-between">
-                    <li>Topics</li>
-                    <li>847</li>
-                  </div>
-                  <div class="flex justify-between">
-                    <li>Replies</li>
-                    <li>2457</li>
-                  </div>
-                </ul>
+            <!-- card image -->
+            <div class="indicator">
+              <span class="indicator-item badge bg-green-600"></span>
+              <div
+                class="grid w-20 rounded-2xl h-20 bg-base-300 place-items-center"
+              >
+                <img src="" alt="" />
               </div>
             </div>
-            <!-- hero title & subtitle -->
-            <div class="text-center lg:text-left text-white">
-              <h1 class="text-5xl font-bold">
-                Welcome to the <br />
-                <span
-                  class="bg-gradient-to-r from-indigo-500 to-indigo-200 text-transparent bg-clip-text"
-                  >BrainWave</span
+            <!-- card text container -->
+            <div class="space-y-4">
+              <div>
+                <!--  row-1 -->
+                <div
+                  class="inter-font font-medium text-sm flex gap-x-5 mt-4 md:mt-0"
                 >
-                Forum!
-              </h1>
-              <p class="py-6">
-                Share your favorite opinion and win exclusive forum coffee mug
-                with BrainWave theme!
-              </p>
-              <!-- hero search input box -->
-              <div class="input rounded-full flex items-center py-7">
-                <input
-                  type="text"
-                  class="grow text-black"
-                  placeholder="Search here anything"
-                />
-                <button
-                  class="btn bg-indigo-400 text-white font-bold px-8 rounded-full"
-                >
-                  Search
-                </button>
+                  <p># Music</p>
+                  <p>Author : Awlad Hossain</p>
+                </div>
+              </div>
+              <!-- row 2 -->
+              <div class="border-b border-dashed border-b-slate-300">
+                <h3 class="font-bold text-xl pb-4">
+                  10 Kids Unaware of Their Halloween Costume
+                </h3>
+                <p class="inter-font pb-4">
+                  It’s one thing to subject yourself to ha Halloween costume
+                  mishap because, hey that’s your prerogative
+                </p>
+              </div>
+              <!--  row 3 -->
+              <div
+                class="flex text-neutral-500 justify-between flex-col md:flex-row items-center"
+              >
+                <div class="flex gap-x-8">
+                  <div class="flex">
+                    <img
+                      class="pr-2"
+                      src="img/message-icon.svg"
+                      alt="message"
+                    />560
+                  </div>
+                  <div class="flex">
+                    <img
+                      class="pr-2"
+                      src="img/eye-icon.svg"
+                      alt="message"
+                    />1,568
+                  </div>
+                  <div class="flex">
+                    <img class="pr-2" src="img/clock-icon.svg" alt="message" />5
+                    min
+                  </div>
+                </div>
+                <div class="mt-4 md:mt-0">
+                  <img src="img/email-icon.svg" alt="" />
+                </div>
               </div>
             </div>
           </div>
+          <!-- right side card container  -->
+          <div class="bg-indigo-50 p-6 rounded-3xl mt-6 md:mt-0">
+            <!-- row 1 -->
+            <div class="flex justify-between">
+              <div><h1>Title</h1></div>
+              <div class="flex">
+                <img src="img/tick-icon.svg" alt="" /> Mark as read (4)
+              </div>
+            </div>
+            <!-- row-2 -->
+            <div
+              class="flex justify-between bg-base-100 p-4 rounded-2xl mt-5 gap-x-12"
+            >
+              <h4>10 Kids Unaware of TheirHalloween Costume</h4>
+              <div class="flex items-center">
+                <img src="img/eye-icon.svg" alt="" />
+                <p class="pr-5 md:pr-0">1,568</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
-      <!----- let's discuss section ----->
-      <section></section>
       <!----- join forum section ----->
       <section></section>
       <!----- latest post section ----->
