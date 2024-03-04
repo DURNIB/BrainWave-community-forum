@@ -16,7 +16,7 @@
   </head>
   <body class="mulish-font">
     <!-------- Navbar -------->
-    <header>
+    <header class="my-6">
       <nav class="container mx-auto">
         <div class="navbar bg-base-100">
           <div class="navbar-start">
@@ -70,22 +70,34 @@
           <div class="navbar-end">
             <div class="hidden lg:flex">
               <ul class="menu menu-horizontal pr-6 gap-x-2">
-                <li class="rounded-full bg-indigo-50 border border-gray-300">
+                <li
+                  class="rounded-full bg-indigo-50 border border-gray-300 tooltip"
+                  data-tip="Home"
+                >
                   <a class="hover:bg-indigo-400 rounded-full p-3">
                     <img src="img/home-icon.svg" alt="home icon"
                   /></a>
                 </li>
-                <li class="rounded-full bg-indigo-50 border border-gray-300">
+                <li
+                  class="rounded-full bg-indigo-50 border border-gray-300 tooltip"
+                  data-tip="Creat Post"
+                >
                   <a class="hover:bg-indigo-400 rounded-full p-3">
                     <img src="img/pen-icon.svg" alt="pen icon"
                   /></a>
                 </li>
-                <li class="rounded-full bg-indigo-50 border border-gray-300">
+                <li
+                  class="rounded-full bg-indigo-50 border border-gray-300 tooltip"
+                  data-tip="Add People"
+                >
                   <a class="hover:bg-indigo-400 rounded-full p-3">
                     <img src="img/add-people-icon.svg" alt="add people icon"
                   /></a>
                 </li>
-                <li class="rounded-full bg-indigo-50 border border-gray-300">
+                <li
+                  class="rounded-full bg-indigo-50 border border-gray-300 tooltip"
+                  data-tip="Flagged"
+                >
                   <a class="hover:bg-indigo-400 rounded-full p-3">
                     <img src="img/flag-icon.svg" alt="flag icon"
                   /></a>
@@ -171,16 +183,16 @@
         <div class="text-center">
           <h1 class="font-black text-3xl mb-6">Let’s Discuss</h1>
           <p>
-            Yes, you can run unit tests and view the results directly within the
-            app. The <br />
-            integrated testing features allow for a streamlined .
+            Let's dive deep into thought-provoking topics. Engage in meaningful
+            discussions and exchange <br />
+            diverse perspectives with our passionate community
           </p>
         </div>
         <!-- discuss card container main  -->
         <div class="flex mt-12 gap-x-2 flex-col md:flex-row justify-evenly">
           <!-- left side card container -->
           <div
-            class="bg-indigo-50 p-8 rounded-3xl flex flex-col md:flex-row gap-x-4"
+            class="bg-indigo-50 p-8 rounded-3xl flex flex-col md:flex-row gap-x-4 hover:cursor-pointer hover:bg-indigo-100 duration-300"
           >
             <!-- card image -->
             <div class="indicator">
@@ -237,7 +249,12 @@
                   </div>
                 </div>
                 <div class="mt-4 md:mt-0">
-                  <button><img src="img/email-icon.svg" alt="" /></button>
+                  <button
+                    class="tooltip tooltip-left"
+                    data-tip="Click to set mark as read"
+                  >
+                    <img src="img/email-icon.svg" alt="" />
+                  </button>
                 </div>
               </div>
             </div>
@@ -279,9 +296,9 @@
             <div class="text-white space-y-4">
               <h2 class="font-black text-3xl md:text-5xl">Join Our Forum</h2>
               <p class="text-[#FFFFFFCC] md:text-xl">
-                Share your favorite opinion and win and wp forum coffee mug!
-                Yes, you can run <br />
-                unit tests and view the results directly within the app.
+                Join our dynamic forum to connect, share ideas, and collaborate
+                with like-minded individuals. <br />
+                Expand your network and be part of our community today!
               </p>
             </div>
             <div class="mt-6">
@@ -300,7 +317,133 @@
         </div>
       </section>
       <!----- latest post section ----->
-      <section></section>
+      <section class="container mx-auto my-24">
+        <!-- latest post title & subtitle -->
+        <div class="text-center">
+          <h1 class="font-black text-3xl mb-6">Latest Posts</h1>
+          <p>
+            Stay informed with the latest discussions and insights. Explore
+            diverse topics and engage with our <br />
+            vibrant community at BrainWave forum.
+          </p>
+        </div>
+        <!-- latest post card container -->
+        <div
+          class="mt-16 mb-24 flex flex-col md:flex-row justify-between gap-6 md:gap-0 hover:cursor-pointer"
+        >
+          <!-- card 1 -->
+          <div>
+            <div
+              class="card w-full md:w-11/12 bg-indigo-50 hover:bg-indigo-100 duration-300 border"
+            >
+              <figure class="px-8 pt-8">
+                <img
+                  src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+                  alt="Shoes"
+                  class="rounded-xl"
+                />
+              </figure>
+              <div class="card-body">
+                <div class="flex gap-x-2">
+                  <img src="img/callender-icon.svg" alt="" />
+                  <h4>29 January 2024</h4>
+                </div>
+                <h2 class="card-title font-extrabold">
+                  What will a mars habitat force that impact in our daily
+                  life!!!!
+                </h2>
+                <p class="text-[#12132D99]">
+                  Yes, you can run unit tests and view the results directly
+                  within the app.
+                </p>
+                <div class="flex gap-x-4 items-center mt-4">
+                  <div>
+                    <img src="img/dummy image.svg" alt="" />
+                  </div>
+                  <div>
+                    <h2 class="font-bold">Cameron Williamson</h2>
+                    <h4>ROR Developer</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- card 2 -->
+          <div>
+            <div
+              class="card w-full md:w-11/12 bg-indigo-50 hover:bg-indigo-100 duration-300 border"
+            >
+              <figure class="px-8 pt-8">
+                <img
+                  src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+                  alt="Shoes"
+                  class="rounded-xl"
+                />
+              </figure>
+              <div class="card-body">
+                <div class="flex gap-x-2">
+                  <img src="img/callender-icon.svg" alt="" />
+                  <h4>29 January 2024</h4>
+                </div>
+                <h2 class="card-title font-extrabold">
+                  What will a mars habitat force that impact in our daily
+                  life!!!!
+                </h2>
+                <p class="text-[#12132D99]">
+                  Yes, you can run unit tests and view the results directly
+                  within the app.
+                </p>
+                <div class="flex gap-x-4 items-center mt-4">
+                  <div>
+                    <img src="img/dummy image.svg" alt="" />
+                  </div>
+                  <div>
+                    <h2 class="font-bold">Cameron Williamson</h2>
+                    <h4>ROR Developer</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- card 3 -->
+          <div>
+            <div
+              class="card w-full md:w-11/12 bg-indigo-50 hover:bg-indigo-100 duration-300 border"
+            >
+              <figure class="px-8 pt-8">
+                <img
+                  src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+                  alt="Shoes"
+                  class="rounded-xl"
+                />
+              </figure>
+              <div class="card-body">
+                <div class="flex gap-x-2">
+                  <img src="img/callender-icon.svg" alt="" />
+                  <h4>29 January 2024</h4>
+                </div>
+                <h2 class="card-title font-extrabold">
+                  What will a mars habitat force that impact in our daily
+                  life!!!!
+                </h2>
+                <p class="text-[#12132D99]">
+                  Yes, you can run unit tests and view the results directly
+                  within the app.
+                </p>
+                <div class="flex gap-x-4 items-center mt-4">
+                  <div>
+                    <img src="img/dummy image.svg" alt="" />
+                  </div>
+                  <div>
+                    <h2 class="font-bold">Cameron Williamson</h2>
+                    <h4>ROR Developer</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <!-------- Footer -------->
     <footer></footer>
